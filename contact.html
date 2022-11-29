@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CONTACT</title>
+</head>
+
+<body>
+    <!-- Head Section -->
+    <div class="header">
+        <h1>GAME WORLD</h1>
+        <ul class="nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="family.html">FAMILY GAMES</a></li>
+            <li><a href="strategic.html">STRATEGIC GAMES</a></li>
+            <li><a href="roleplay.html">ROLE PLAYING GAMES</a></li>
+            <li><a href="buy.html">BUY</a></li>
+            <li><a href="#" id="active">CONTACT</a></li>
+            
+        </ul>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="contact-bg">
+        <div class="contact-blue">
+            <h1>CONTACT US</h1>
+            <form class="form-shell">
+                <div class="flex-form">
+                    <div class="form-lt">
+                        <input type="text" class="ct-input" id="name">
+                        <label for="name" class="ct-label">Name</label>
+                    </div>
+
+                    <div class="form-rt">
+                        <input type="email" class="ct-input" id="email">
+                        <label for="email" class="ct-label">Email</label>
+                    </div>
+                </div>
+
+                <textarea name="message" id="msg" cols="30" rows="4" class="ct-msg"></textarea>
+                <button class="ct-btn square-blue" onclick="contactSubmit()" >Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Info -->
+    <div class="flex-footer">
+        <p class="footer-address">World Games Co. 9234 Main RD. Somewhere, MO 21111</p>
+        <div class="footer-center">
+            <ul class="nav-footer">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="family.html">FAMILY GAMES</a></li>
+                <li><a href="strategic.html">STRATEGIC GAMES</a></li>
+                <li><a href="roleplay.html">ROLE PLAYING GAMES</a></li>
+                <li><a href="buy.html">BUY</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="social-box">
+            <a href="https://unsplash.com/explore" target="_blank">Images by Unsplashed</a>
+            <ul class="nav-social">
+                <li><a href="#"><img class="social-icon" src="images/facebook.png" alt="facebook"></a></li>
+                <li><a href="#"><img class="social-icon" src="images/twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img class="social-icon" src="images/instagram.png" alt="instagram"></a></li>
+                <li><a href="#"><img class="social-icon" src="images/linkedin.png" alt="linkedin"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Script goes below -->
+    <script>
+        function contactSubmit() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('msg').value;
+
+            alert(`${name},\nYour message:\n\n${message}\n\nHas been sent to your email:\n${email}`);
+
+        }
+    </script>
+
+</body>

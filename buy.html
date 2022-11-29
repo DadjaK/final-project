@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>BUY</title>
+</head>
+
+<body>
+    <!-- Head Section -->
+    <div class="header">
+        <h1>GAME WORLD</h1>
+        <ul class="nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="family.html">FAMILY GAMES</a></li>
+            <li><a href="strategic.html">STRATEGIC GAMES</a></li>
+            <li><a href="roleplay.html">ROLE PLAYING GAMES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="#" id="active">BUY</a></li>
+            
+        </ul>
+    </div>
+
+    <!-- Buy information -->
+    <div class="outer-section">
+
+        <!-- Left side-->
+        <div class="buy-lt">
+            <img id="bike" src="images/crosscountry.png" alt="cross country">
+            <form class="ship-info">
+                <input class="ct-input" type="text" id="name"><br>
+                <label class="contact-label" for="name">Name</label><br>
+                <input class="ct-input" type="text" id="address"><br>
+                <label class="contact-label" for="address">Address</label><br>
+                <input class="ct-input" type="text" id="city"><br>
+                <label class="contact-label" for="city">City</label><br>
+
+                <div class="ship">
+                    <div class="ship-lt">
+                        <input class="ct-input" type="text" id="state"><br>
+                        <label class="contact-label" for="state">State</label>
+                    </div>
+                    <div class="ship-rt">
+                        <input class="ct-input" type="text" id="zip"><br>
+                        <label class="contact-label" for="zip">Zipcode</label>
+                    </div>
+                </div>
+
+                <input class="ct-input" type="text" id="phone"><br>
+                <label class="contact-label" for="phone">Phone</label>
+            </form>
+        </div>
+
+        <!-- Right side-->
+        <div class="buy-rt">
+            <form class="order-shell">
+                <!-- Choose bike -->
+                <section class="game-choice"> // Changed from "bike-choice"
+                    <select name="game" id="game-style" onchange="changeImage()"> Changed bike to game
+                        <option disabled selected value>-- Select Your Game Category --</option>
+                        <option value="family">Family Board Games</option>  // country
+                        <option value="strategic">Strategic Board Games</option>       // downhill
+                        <option value="role-playing">Role Playing Board Games</option>           // touring
+                        
+                    </select> <br>
+                    <label class="order-label" for="game-style">Game Category</label>
+                </section>
+
+
+
+    <!-- Footer Info -->
+    <div class="flex-footer">
+        <p class="footer-address">World Games Co. 9234 Main RD. Somewhere, MO 21111</p>
+        <div class="footer-center">
+            <ul class="nav-footer">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="family.html">FAMILY GAMES</a></li>
+                <li><a href="strategic.html">STRATEGIC GAMES</a></li>
+                <li><a href="roleplay.html">ROLE PLAYING GAMES</a></li>
+                <li><a href="#">BUY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="social-box">
+            <a href="https://unsplash.com/explore" target="_blank">Images by Unsplashed</a>
+            <ul class="nav-social">
+                <li><a href="#"><img class="social-icon" src="images/facebook.png" alt="facebook"></a></li>
+                <li><a href="#"><img class="social-icon" src="images/twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img class="social-icon" src="images/instagram.png" alt="instagram"></a></li>
+                <li><a href="#"><img class="social-icon" src="images/linkedin.png" alt="linkedin"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
