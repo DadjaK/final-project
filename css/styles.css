@@ -1,0 +1,418 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-left: 12px;
+    margin: 6px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.header {
+    height: 50px;
+}
+
+.nav {
+    list-style-type: none;
+    height: 50px;
+    display: inline;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav li a:hover, #active {
+    background-color: #1C6E8C;
+    color: white;
+}
+
+.banner {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 475px;
+}
+
+.flex-our {
+    display: flex;
+    justify-content: center;
+    margin-top: -110px;
+}
+
+.square-green {
+    background-color: #31881B;
+}
+
+.square-blue {
+    background-color: #1C6E8C;
+}
+
+.square-purple {
+    background-color: purple;
+}
+.square {
+    width: 250px;
+    height: 250px;
+    margin: 16px;
+    padding: 32px;
+}
+
+.flex-our h2 {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.our-paragraph {
+    color: white;
+    font-size: 24px;
+}
+
+.more {
+    color: white;
+}
+
+.index-info {
+    font-size: 20px;
+    margin: 24px 48px 0px 48px;
+}
+
+.flex-footer {
+    background-color: #B3B3BC;
+    height: 100px;
+    display: flex;
+    margin-top: 150px;
+}
+
+.footer-address {
+    font-size: 19px;
+    width: 200px;
+    text-align: center;
+    margin-left: 48px;
+    flex-grow: 1;
+}
+
+.footer-center {
+    width: 500px;
+    align-self: center;
+    flex-grow: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    align-self: center;
+}
+
+.nav-footer li, .nav-social li {
+    float: left;
+}
+
+.nav-footer li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-box {
+    float: right;
+    width: 250px;
+    align-items: center;
+    padding: 12px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.social-box a {
+    margin-bottom: 6px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-social {
+    list-style-type: none;
+    margin: 0; padding: 0;
+    height: 32px; display: inline;
+}
+.nav-social li a {
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+}
+.social-icon {
+    width: 32px; height: 32px;
+}
+
+.game-catalog {
+    margin: 48px 56px;
+}
+
+#game-title {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.game-catalog p {
+    font-size: 19px;
+}
+
+.flex-game {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-game img {
+    width: 500px;
+    margin-right: 32px;
+}
+
+.buy-game {
+    width: 500px;
+    margin-left: 32px;
+}
+
+.buy-game h2 {
+    color: white;
+    margin: 32px;
+    font-size: 24px;
+}
+
+.buy-game p {
+    color: white;
+    margin: 0px 32px;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.buy-game-btn {
+    float: right;
+    margin-right: 32px;
+    margin-top: 24px;
+    width: 140px;
+    height: 60px;
+    border: white 4px solid;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+.buy-game-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.contact-bg {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    height: 650px;
+}
+
+.contact-blue {
+    background-color: #1C6E8C;
+    width: 800px;
+    height: 425px;
+    margin-top: 64px;
+    padding: 32px;
+}
+
+.contact-blue h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: normal;
+    margin: 0; padding: 0;
+    display: block;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.form-shell {
+    margin: 32px;
+    padding: 0;
+}
+
+.flex-form {
+    display: flex;
+    margin-left: 6px;
+}
+
+.form-lt, .form-rt {
+    width: 100%;    
+}
+
+.form-lt {
+    margin-right: 12px;
+}
+
+.form-rt {
+    margin-left: 12px;
+}
+
+.ct-input {
+    width: 100%;
+}
+
+.ct-input, .ct-msg {
+    background-color: #B3B3BC;
+    font-size: 24px;
+    appearance: none;
+    border: 0;
+    color: black;
+    outline: none;
+}
+
+.ct-label {
+    margin: 6px;
+    color: white;
+    font-size: 21px;
+}
+
+.ct-msg {
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 21px 12px 21px 6px;
+}
+
+.ct-input:focus, .ct-msg:focus {
+    border: 3px solid white;
+}
+
+.ct-btn {
+    margin-right: 0px;
+    margin-top: 24px;
+    padding: 0;
+    width: 170px;
+    height: 50px;
+    float: right;
+    border: 4px solid white;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+.outer-section {
+    margin: 48px 56px;
+    display: flex;
+    justify-content: center;
+}
+
+#game {
+    width: 500px;
+    margin-left: 42px;
+}
+
+.buy-lt {
+    margin-right: 42px;
+    width: 600px;
+}
+
+.buy-rt {
+    width: 600px;
+    margin-left: 42px;
+}
+
+.ship-info {
+    margin-top: 24px;
+    width: 600px;
+}
+
+.ship {
+    display: flex;
+}
+
+.ship-lt, .ship-rt {
+    width: 100%;
+}
+.ship-lt {
+    margin-right: 12px;
+}
+
+.order-label, .contact-label {
+    font-size: 21px;
+}
+select {
+    height: 30px;
+    background-color: #B3B3BC;
+    font-size: 24px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    border: 0;
+    color: white;
+    outline: none;
+    width: 100%;
+    text-align: center;
+}
+
+#btn-purchase {
+    background-color: #31881B;
+    border-color: #31881B;
+    border-radius: 15px;
+    font-size: 21px;
+    color: white;
+    width: 170px;
+    height: 60px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    float: right;
+}
+
+.custom-label {
+    font-size: 19px;
+    margin-top: 32px;
+}
+
+.order-show {
+    margin-top: 32px;
+    background-color: #B3B3BC;
+    display: flex;
+    width: 100%;
+}
+
+.receipt-lt {
+    flex-grow: 3;
+    margin-left: 12px;
+}
+
+.receipt-rt {
+    margin-right: 12px;
+}
+
+.amount {
+    text-align: right;
+}
+.rec-rt {
+    text-align: right;
+    margin-right: 16px;
+}
