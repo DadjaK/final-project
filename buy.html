@@ -16,7 +16,7 @@
             <li><a href="index.html">HOME</a></li>
             <li><a href="family.html">FAMILY GAMES</a></li>
             <li><a href="strategic.html">STRATEGIC GAMES</a></li>
-            <li><a href="roleplay.html">ROLE PLAYING GAMES</a></li>
+            <li><a href="rpg.html">RPG</a></li>
             <li><a href="contact.html">CONTACT</a></li>
             <li><a href="#" id="active">BUY</a></li>
             
@@ -28,7 +28,7 @@
 
         <!-- Left side-->
         <div class="buy-lt">
-            <img id="bike" src="images/crosscountry.png" alt="cross country">
+            <img id="game" src="images/crosscountry.png" alt="family">  //Replace image , id changed from bike
             <form class="ship-info">
                 <input class="ct-input" type="text" id="name"><br>
                 <label class="contact-label" for="name">Name</label><br>
@@ -56,17 +56,77 @@
         <!-- Right side-->
         <div class="buy-rt">
             <form class="order-shell">
-                <!-- Choose bike -->
+                <!-- Choose game -->
                 <section class="game-choice"> // Changed from "bike-choice"
                     <select name="game" id="game-style" onchange="changeImage()"> Changed bike to game
                         <option disabled selected value>-- Select Your Game Category --</option>
-                        <option value="family">Family Board Games</option>  // country
-                        <option value="strategic">Strategic Board Games</option>       // downhill
-                        <option value="role-playing">Role Playing Board Games</option>           // touring
+                        <option value="monopoliser">MONOPOLISER</option>  
+                        <option value="no-clue">NO CLUE</option>       
+                        <option value="terminal-fantasy">TERMINAL FANTASY</option> 
+                        <option value="land-of-the-unknown">LAND OF THE UNKNOWN</option>   
+                        <option value="the-game-of existence">THE GAME OF EXISTENCE</option> 
+                        <option value="risky-business">RISKY BUSINESS</option>            
                         
                     </select> <br>
                     <label class="order-label" for="game-style">Game Category</label>
                 </section>
+
+                <!-- Choose Bike Frame Color -->
+                <section class="game-type" id="game-section">
+                    <select name="game-type" id="game-type-style" onchange="updateOrder()">
+                        <option disabled selected value>-- Select your Family Game --</option>
+                        <option value="Monopoliser">Monopoliser</option>
+                        <option value="No Clue">No Clue</option>
+                
+                        <option value="Avatar Pieces">Avatar Pieces (additonal cost)</option>
+                        <option value="Custom Dice">Custom Dice (additonal cost)</option>
+                        <option value="Gold">Gold (additonal cost)</option>
+                    </select> <br>
+                    <label class="order-label" for="game-type-style">Family Game</label>
+                </section>
+
+                <!-- Custom options -->
+                <p class="custom-label" id="custom-label">We offer the following Custom Options. Check all that apply.</p>
+                <div class="custom-options" id="custom-options">                    
+                    <section class="co-items">                        
+                        <input type="checkbox" id="avt-pieces" value="Avatar Pieces" onchange="customTires()"> 
+                        <label class="order-label" for="avt-pieces">Avatar Pieces</label><br>     
+
+                        <input type="checkbox" id="cst-dice" value="Custom Dice" onchange="customGrips()">
+                        <label class="order-label" for="cst-dice">Custom Dice</label>
+
+                    </section>         
+                </div>
+            </form>
+
+            <button id="btn-purchase" onclick="reserveOrder()">Purchase</button>
+            <div class="order-show" id="order-show">
+                <div class="receipt-lt">
+                    <p class="rec-lt" id="rec-category"></p>
+                    <p class="rec-lt" id="rec-game"></p>
+                    <p class="rec-lt" id="rec-model-number"></p>
+                    <p class="rec-lt" id="rec-upc"></p>
+                    <p class="rec-lt" id="rec-starting-count"></p>
+                    <p class="rec-lt" id="rec-avatar-pieces"></p>
+                    <p class="rec-lt" id="rec-custom-dice"></p>
+                    <p class="rec-rt">Sub Total</p>
+                    <p class="rec-rt">Tax</p>
+                    <p class="rec-rt">Total</p>
+                </div>
+                <div class="receipt-rt">
+                    <p class="amount" id="rec-category"></p>
+                    <p class="amount" id="rec-game"></p>
+                    <p class="amount">included</p>
+                    <p class="amount" id="rec-avatar-pieces-price"></p>
+                    <p class="amount" id="rec-custom-price"></p>
+                    <p class="amount" id="rec-subtotal"></p>
+                    <p class="amount" id="rec-tax"></p>
+                    <p class="amount" id="rec-total"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
 
@@ -78,7 +138,7 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="family.html">FAMILY GAMES</a></li>
                 <li><a href="strategic.html">STRATEGIC GAMES</a></li>
-                <li><a href="roleplay.html">ROLE PLAYING GAMES</a></li>
+                <li><a href="rpg.html">RPG</a></li>
                 <li><a href="#">BUY</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
